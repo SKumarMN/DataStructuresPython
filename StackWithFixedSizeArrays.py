@@ -24,4 +24,19 @@ class Stack(object):
         else:
             return self.data[-1]
         
-        
+our_stack = Stack(5)
+our_stack.push("1")
+our_stack.push("21")
+our_stack.push("14")
+our_stack.push("11")
+our_stack.push("31")
+our_stack.push("14")
+our_stack.push("15")
+our_stack.push("19")
+our_stack.push("3")
+our_stack.push("99")
+our_stack.push("9")
+print( our_stack.peek())
+print(our_stack.pop())
+print (our_stack.peek())
+print (our_stack.pop())
