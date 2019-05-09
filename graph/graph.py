@@ -29,7 +29,7 @@ class Graph(abc.ABC):
         pass
 
 
-class AdjacencyMatrix(Graph):
+class AdjacencyMatrixGraph(Graph):
 
     def __init__(self, numVertices, directed=False):
         super().__init__(numVertices, directed=directed)
@@ -86,7 +86,7 @@ class AdjacencyMatrix(Graph):
 
    
 
-g = AdjacencyMatrix(4,True)
+g = AdjacencyMatrixGraph(4,True)
 
 g.add_edge(0,1)
 g.add_edge(0,1)
