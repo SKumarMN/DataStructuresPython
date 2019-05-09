@@ -85,13 +85,13 @@ class AdjacencyMatrixGraph(Graph):
                 print(i, "-->", v)
 
    
+if __name__=='main':
+    g = AdjacencyMatrixGraph(4,True)
 
-g = AdjacencyMatrixGraph(4,True)
+    g.add_edge(0,1)
+    g.add_edge(0,1)
+    g.add_edge(0,2)
+    g.add_edge(2,3)
 
-g.add_edge(0,1)
-g.add_edge(0,1)
-g.add_edge(0,2)
-g.add_edge(2,3)
-
-g.display()
+    g.display()
     

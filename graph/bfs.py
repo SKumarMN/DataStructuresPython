@@ -19,7 +19,16 @@ def bfs(graph, start=0):
             if v not in visited:
                 queue.put(v)
 
+def dfs(graph,visited,current=0):
+    if(visited[current]==1):
+        return
+    
+    visited[current]=1
 
+    print(current)
+
+    for v in graph.get_adjacent_vertex(current):
+        dfs(graph,visited,v)
 
 g = AdjacencyMatrixGraph(6,False)
 
@@ -34,3 +43,5 @@ g.add_edge(3,5)
 
 g.display()
 bfs(g,5)
+visited = [0]*6
+dfs(g,visited)
